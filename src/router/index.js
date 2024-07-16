@@ -38,11 +38,14 @@ const router = createRouter({
         }
       ]
     },
-
     {
-      path: '/about',
+      path: '/about-us',
       name: 'AboutView',
       component: AboutView
+    },
+    {
+      path: '/about',
+      redirect: { name: 'AboutView' }
     }
   ]
 })
